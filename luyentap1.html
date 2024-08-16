@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Bang cuu chuong</h2>
+<table border="1px" id="content"></table>
+<script>
+    let content="";
+    for (let i = 1; i < 10; i++) {
+        content+="<tr>";
+        for (let j = 1; j < 10; j++) {
+            content+=`<td>${j}*${i}=${i*j}</td>`
+        }
+        content+="</tr>";
+    }
+    document.getElementById("content").innerHTML=content;
+</script>
+</body>
+</html>
