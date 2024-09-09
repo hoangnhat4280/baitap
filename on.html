@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Dienthoai {
+        madienthoai;
+        ten;
+        hangsanxuat;
+        gia;
+
+        constructor(madienthoai, ten, hangsanxuat, gia) {
+            this.madienthoai = madienthoai;
+            this.ten = ten;
+            this.hangsanxuat = hangsanxuat;
+            this.gia = gia;
+        }
+    }
+
+    let Nokia = new Dienthoai("123", "Nokia", "No", 2000000 + "VND");
+    let Iphone = new Dienthoai("789", "Iphone", "Ip", 4000000 + "VND");
+    let SamSung = new Dienthoai("456", "SamSung", "Sam", 3000000 + "VND");
+    console.log(Nokia);
+    console.log(Iphone);
+    console.log(SamSung);
+    let danhsachdienthoai = [Nokia, Iphone, SamSung];
+    function sapxeptangdan(arr, n) {
+        for (let i = n; i >=2; i--) {
+            for (let j = 0; j < i-1; j++) {
+                if (arr[j] > arr[j+1]) {
+                    let temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+    }
+    sapxeptangdan(danhsachdienthoai,danhsachdienthoai.length);
+
+</script>
+
+</body>
+</html>
