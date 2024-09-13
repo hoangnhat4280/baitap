@@ -1,6 +1,8 @@
-let weight = + prompt('Nhap can nang (kg):')
-let height = + prompt('Nhap chieu cao (m):')
-let bmi = weight / height**2
+function calculate() {
+    let w = +document.getElementById("weight").value;
+    let h = +document.getElementById("height").value;
+}
+let bmi = w / h**2
 
 if (bmi < 18.5) {
     document.write("Underweight");
