@@ -1,10 +1,10 @@
-let weight = + prompt('Nhap can nang (kg):', 0)
-let height = + prompt('Nhap chieu cao (m):', 0)
+let weight = + prompt('Nhap can nang (kg):')
+let height = + prompt('Nhap chieu cao (m):')
 let bmi = weight / height**2
 
-if (bmi < 18,5) {
+if (bmi < 18.5) {
     document.write("Underweight");
-} else if (bmi <= 18,5 ) {
+} else if (bmi <= 18.5 ) {
     document.write("Normal");
 } else if (bmi <= 25.0) {
     document.write("Over weight");
